@@ -1,0 +1,8 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+task execute(type: JavaExec) {
+    main = "com.example.Main"
+    classpath = sourceSets.main.runtimeClasspath
+}
